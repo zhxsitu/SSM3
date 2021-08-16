@@ -35,8 +35,7 @@ public class MapperTest {
     SqlSession session;
     @Test
     void test2(){
-        System.out.println("这只是测试版本");
-        System.out.println("这只是测试版本3");
+        System.out.println("hot-fix 4");
         System.out.println(employeeService.getEmpList().size());
     }
     @Test
