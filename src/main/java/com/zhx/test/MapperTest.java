@@ -35,6 +35,7 @@ public class MapperTest {
     SqlSession session;
     @Test
     void test2(){
+        System.out.println("hot-fix 4");
         System.out.println(employeeService.getEmpList().size());
     }
     @Test
