@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	<typeAliases>
+		<package name="com.zhx.bean"/>
+	</typeAliases>
+
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<!--分页参数合理化  -->
+			<property name="reasonable" value="true"/>
+		</plugin>
+	</plugins>
+
+<!--	<typeHandlers>-->
+<!--		需要自定义枚举-->
+<!--		<typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="com.zhx.entity.EmpStatus"/>-->
+<!--		<typeHandler handler="com.zhx.typeHandler.MyEnumStatusTypeHandler" javaType="com.zhx.entity.EmpStatus"/>-->
+<!--	</typeHandlers>-->
+
+
+<!--	<plugins>-->
+<!--		<plugin interceptor="com.zhx.plugin.FistPlugin">-->
+<!--			<property name="username" value="zhx"/>-->
+<!--			<property name="password" value="123"/>-->
+<!--		</plugin>-->
+<!--		<plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>-->
+<!--	</plugins>-->
+
+<!--	 将我们写好的sql映射文件（EmployeeMapper.xml）一定要注册到全局配置文件（mybatis-config.xml）中 -->
+
+<!--	<mappers>-->
+<!--		<mapper resource="com/zhx/dao/mapper/DepartmentMapper.xml" />-->
+<!--		<mapper resource="com/zhx/dao/mapper/EmployeeMapper.xml" />-->
+<!--	</mappers>-->
+</configuration>
