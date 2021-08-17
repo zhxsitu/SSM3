@@ -37,6 +37,7 @@ public class MapperTest {
     void test2(){
         System.out.println("hot-fix 4");
         System.out.println("ho是是是t-fix 4");
+        System.out.println("hot2-fix 4");
         System.out.println(employeeService.getEmpList().size());
     }
     @Test
